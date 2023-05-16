@@ -1,1 +1,1 @@
-# master-css-blog
+# MasterCSS Blog Template

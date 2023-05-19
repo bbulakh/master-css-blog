@@ -6,18 +6,7 @@ const clean = require("gulp-clean");
 const rename = require("gulp-rename");
 const md5File = require("md5-file");
 
-/**
- * Task: Tailwind
- */
-task("tailwind", function (cb) {
-  const command =
-    "npx tailwindcss -i ./src/assets/css/tailwind-ecommerce.css -o ./public/assets/dist/css/tailwind-ecommerce.css";
-  exec(command, function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
-});
+
 
 /**
  * Task: Prettier
@@ -59,33 +48,6 @@ task("build-favicons", function () {
 });
 
 /**
- * Task: Build css version
- */
-task("build-css-version", function () {
-  const baseFilePath = "./public/assets/dist/css/tailwind-ecommerce.css";
-  const hash = md5File.sync(baseFilePath);
-
-  return src(baseFilePath)
-    .pipe(csso())
-    .pipe(rename(`tailwind-ecommerce-${hash}.css`))
-    .pipe(dest("./public/assets/dist/css/"));
-});
-
-/**
- * Task: Build html updates
- */
-task("build-html-updates", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
-  return src("./public/*.html")
-    .pipe(
-      htmlreplace({
-        css: `/assets/dist/css/tailwind-ecommerce-${hash}.css`,
-      })
-    )
-    .pipe(dest("public/"));
-});
-
-/**
  * Task: Clean
  */
 task("clean", function () {
@@ -106,11 +68,8 @@ task(
   "build",
   series(
     "clean",
-    "tailwind",
     "build-pages",
     "build-images",
-    "build-css-version",
-    "build-html-updates",
     "build-js"
   )
 );

@@ -23,7 +23,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
     <!-- Navbar  -->
-    <nav class="flex jc:space-between ai:center p:20px max-w:375px@3xs max-w:768px@sm mx:auto">
+    <section class="flex jc:space-between ai:center p:20px max-w:375px@3xs max-w:768px@sm mx:auto">
 
         <div class="rounded b:1|solid|black border-color:black cursor:pointer">
             <div class="bg:#F9D949 b:1|solid|black border-color:white rounded w:35px h:35px flex center-content">
@@ -31,13 +31,24 @@
             </div>
         </div>
 
-        <div class="w:35px h:35px cursor:pointer">
+        <nav class="hidden block@sm">
+            <ul class="flex center-content list-style-type:none font-weight:400 font:black">
+                <li class=""><a class="color:black color:#F45050:hover" href="index.html">Home</a></li>
+                <li class="ml:3vh"><a class="color:black color:#F45050:hover" href="index.html">About</a></li>
+                <li class="ml:3vh"><a class="color:black color:#F45050:hover" href="index.html">Demo Post</a></li>
+                <li class="ml:3vh"><a class="color:black color:#F45050:hover" href="index.html">Log In</a> <span class="mx:1vh">&frasl;</span><a class="color:black color:#F45050:hover" href="index.html">Sign Up</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="w:35px h:35px cursor:pointer hidden@sm">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                 stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </div>
-    </nav>
+    </section>
     <!-- /Navbar  -->
 
     <!-- Heading  -->
@@ -127,7 +138,7 @@
         <!-- /2 -->
 
         <!-- 3 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/lofi-image.jpg" alt="Guitar image" />
             <div>
                 <p class="mt-2 color:#F45050 font-size:14px font-weight:500">Sunday, 03 March 2023</p>
@@ -160,7 +171,7 @@
         <!-- /3 -->
 
         <!-- 4 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/naruto-image.jpg"
                 alt="Guitar image" />
             <div>
@@ -272,7 +283,7 @@
         <!-- /2 -->
 
         <!-- 3 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/matthew-bellamy.jpg"
                 alt="Guitar image" />
             <div>
@@ -305,7 +316,7 @@
         <!-- /3 -->
 
         <!-- 4 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/macbook.jpg" alt="Guitar image" />
             <div>
                 <p class="mt-2 color:#F45050 font-size:14px font-weight:500">Saturday, 31 January 2022</p>
@@ -337,7 +348,7 @@
         <!-- /4 -->
 
         <!-- 5 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/back-to-the-future.jpg"
                 alt="Guitar image" />
             <div>
@@ -370,7 +381,7 @@
         <!-- /5 -->
 
         <!-- 6 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/moon.jpg" alt="Guitar image" />
             <div>
                 <p class="mt-2 color:#F45050 font-size:14px font-weight:500">Monday, 11 August 2023</p>

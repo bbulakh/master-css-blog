@@ -18,12 +18,12 @@
 
 
 
-<body style="font-family: 'Inter', sans-serif; margin: 0;">
+<body class="bg-fade-50 bg:fade-20@dark bg:fade-80@light" style="font-family: 'Inter', sans-serif; margin: 0;">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
     <!-- Navbar  -->
-    <nav class="flex jc:space-between ai:center p:20px">
+    <nav class="flex jc:space-between ai:center p:20px max-w:375px@3xs max-w:768px@sm mx:auto">
 
         <div class="rounded b:1|solid|black border-color:black cursor:pointer">
             <div class="bg:#F9D949 b:1|solid|black border-color:white rounded w:35px h:35px flex center-content">
@@ -41,20 +41,20 @@
     <!-- /Navbar  -->
 
     <!-- Heading  -->
-    <section class="flex center-content lh:1 px:20px">
-        <img class="w:100% my:20px" src="../assets/images/bloghub-logo.svg" alt="Bloghub Logo">
+    <section class="flex center-content lh:1 px:20px max-w:375px@3xs max-w:768px@sm mx:auto">
+        <img class="w:100% w:60%@sm my:20px" src="../assets/images/bloghub-logo.svg" alt="Bloghub Logo">
     </section>
 
     <!-- /Heading  -->
 
-    <h2 class="font-weight:medium font-size:20px my:40px px:20px">Recent blog posts</h2>
+    <h2 class="font-weight:medium font-size:20px my:40px px:20px max-w:375px@3xs max-w:768px@sm mx:auto">Recent blog posts</h2>
 
     <!-- Recent Articles -->
 
-    <section class="px:20px">
+    <section class="px:20px max-w:375px@3xs max-w:768px@sm grid-cols:2@sm gap:25@sm mx:auto">
 
         <!-- 1 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/guitar-image.jpg"
                 alt="Guitar image" />
             <div>
@@ -72,7 +72,7 @@
                     options for rock, blues, jazz and country music.</p>
 
 
-                <div class="flex">
+                <div class="flex mt:auto@sm">
                     <div class="flex center-content rounded bg:#F9F5FF">
                         <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
                     </div>
@@ -87,7 +87,7 @@
         <!-- /1 -->
 
         <!-- 2 -->
-        <div class="flex flex-direction:column mx:auto">
+        <div class="flex flex-direction:column mx:auto min-h:100%@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/mac-and-cheese.jpg"
                 alt="Guitar image" />
             <div>
@@ -101,24 +101,26 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">Mac &amp; cheese is a great way to combine
-                    flavor and comfort. Here's a delicious and easy recipe to make perfect mac and cheese every time.
-                </p>
-
-
-                <div class="flex">
-                    <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Food</p>
+               <div class="flex flex-direction:column jc:space-between">
+                    <p class="font:16px color:#667085 mb:24px font-weight:400">Mac &amp; cheese is a great way to combine
+                        flavor and comfort. Here's a delicious and easy recipe to make perfect mac and cheese every time.
+                    </p>
+    
+    
+                    <div class="flex mt:5px">
+                        <div class="flex center-content rounded bg:#F9F5FF">
+                            <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Food</p>
+                        </div>
+    
+                        <div class="flex center-content rounded ml:2vh bg:#F9F5FF">
+                            <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Cooking</p>
+                        </div>
+    
+                        <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
+                            <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                        </div>
                     </div>
-
-                    <div class="flex center-content rounded ml:2vh bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Cooking</p>
-                    </div>
-
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
-                    </div>
-                </div>
+               </div>
             </div>
         </div>
 
@@ -192,14 +194,14 @@
     </section>
     <!-- /Recent Articles -->
 
-    <h2 class="font-weight:medium font-size:20px my:40px px:20px">All blog posts</h2>
+    <h2 class="font-weight:medium font-size:20px my:40px px:20px max-w:375px@3xs max-w:768px@sm mx:auto">All blog posts</h2>
 
     <!-- ALL Articles -->
 
-    <section class="px:20px">
+    <section class="px:20px max-w:375px@3xs max-w:768px@sm grid-cols:2@sm gap:25@sm mx:auto">
 
         <!-- 1 -->
-        <div class="flex flex-direction:column mx:auto my:6vh">
+        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="../assets/images/fifa-image.jpg" alt="Guitar image" />
             <div>
                 <p class="mt-2 color:#F45050 font-size:14px font-weight:500">Friday, 13 May 2023</p>
@@ -405,7 +407,7 @@
 
 
     <!-- Footer  -->
-    <footer class="flex center-content my:6vh px:20px gap:2vh">
+    <footer class="flex center-content my:6vh px:20px gap:2vh max-w:375px@3xs mx:auto">
         <div class="cursor:pointer">&larr;</div>
         <div class="flex center-content r:5 w:40px h:40px bg:#FFEF9E bg:#FFEF9E:hover cursor:pointer">1</div>
         <div class="flex center-content r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">2</div>
@@ -415,7 +417,7 @@
         <div class="cursor:pointer">&rarr;</div>
     </footer>
 
-    <section class="flex center-content gap:4vh my:4vh">
+    <section class="flex center-content gap:4vh my:4vh max-w:375px@3xs mx:auto">
         <a href="https://github.com/bbulakh"><img src="../assets/images/github.svg" alt="Github icon"></a>
         <a href="https://www.linkedin.com/in/bogdan-bulakh-393284190/"><img src="../assets/images/linkedin.svg" alt="Linkedin icon"></a>
         <a href="https://twitter.com/mr_bulakh"><img src="../assets/images/twitter.svg" alt="Twitter logo"></a>

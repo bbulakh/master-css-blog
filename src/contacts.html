@@ -14,7 +14,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="https://cdn.master.co/normal.css" rel="stylesheet">
-    <title>Log in</title>
+    <title>Contact Me</title>
 </head>
 
 <body class="flex flex-direction:column jc:space-between h:100vh" style="font-family: 'Inter', sans-serif; margin: 0;">
@@ -33,10 +33,20 @@
 
         <nav class="hidden block@sm">
             <ul class="flex center-content list-style-type:none font-weight:400 font:black">
-                <li class=""><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="index.html">Home</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="about.html">About</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="contacts.html">Contacts</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="login.html">Log In</a> <a class="ml:2vh px:2vh py:10px text-decoration:none font:white:hover bg:violet:hover font:black bg:#ffde34 border-radius:5" href="sign-up.html">Sign Up</a></li>
+                <li class=""><a
+                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="index.html">Home</a></li>
+                <li class="ml:3vh"><a
+                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="about.html">About</a></li>
+                <li class="ml:3vh"><a
+                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="contacts.html">Contacts</a></li>
+                <li class="ml:3vh"><a
+                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="login.html">Log In</a> <a
+                        class="ml:2vh px:2vh py:10px text-decoration:none font:white:hover bg:violet:hover font:black bg:#ffde34 border-radius:5"
+                        href="sign-up.html">Sign Up</a></li>
             </ul>
         </nav>
 
@@ -53,33 +63,31 @@
 
     <div class="my:10vh max-w:500px@3xs mx:auto w:100%">
         <div class="px:20 mb:5vh">
-            <h2 class="mb:0 font:30px">Hey there&#128075;</h2>
-            <p class="m:0 font:20px">Welcome back, user&excl;</p>
+            <h2 class="mb:0 font:30px">Let's get in touch.</h2>
+            <p class="m:0 font:20px">Ask me a question&excl;</p>
         </div>
-    
+
         <form class="px:20px">
             <div class="flex flex-direction:column my:2vh">
                 <label class="mb:2vh font:medium" for="">E-mail</label>
-                <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="email" placeholder="user@bloghub.com">
+                <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="email"
+                    placeholder="user@bloghub.com">
             </div>
             <div class="flex flex-direction:column my:2vh">
-                <label class="mb:2vh font:medium" for="">Password</label>
-                <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="password" placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;">
+                <label class="mb:2vh font:medium" for="">Name</label>
+                <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="text"
+                    placeholder="Bogdan Bulakh">
             </div>
 
-            <button class="w:100% py:10px font:16px bg:violet font:white b:none r:5px">Log In</button>
-    
-            <p class="text-align:center py:20px">Or login with</p>
+            <div class="flex flex-direction:column my:2vh">
+                <label class="mb:2vh font:medium" for="">Message</label>
+                <textarea class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" cols="30"
+                    rows="10"></textarea>
+            </div>
 
-            <section class="flex center-content gap:4vh my:4vh max-w:375px@3xs mx:auto mt:auto">
-                <a href="https://github.com/bbulakh"><img src="../assets/images/github.svg" alt="Github icon"></a>
-                <a href="https://www.linkedin.com/in/bogdan-bulakh-393284190/"><img src="../assets/images/linkedin.svg"
-                        alt="Linkedin icon"></a>
-                <a href="https://twitter.com/mr_bulakh"><img src="../assets/images/twitter.svg" alt="Twitter logo"></a>
-                <a href="https://t.me/b_bulakh"><img src="../assets/images/telegram.svg" alt=""></a>
-            </section>
-    
-    
+            <button class="w:100% py:10px font:16px bg:violet font:white b:none r:5px">Send Message</button>
+
+
         </form>
     </div>
 
@@ -88,7 +96,7 @@
 
     <!-- Footer  -->
     <section class="flex flex-direction:column center-content bg:#ffde34 w:100% py:20px hidden@lg">
-        <img width="60px" height="60px" src="../assets/images/bloghub-mini-logo.svg" alt="Bloghub logo">
+        <img width="60px" height="60px" src="assets/images/bloghub-mini-logo.svg" alt="Bloghub logo">
         <p>&copy; Bogdan Bulakh, 2023</p>
     </section>
 

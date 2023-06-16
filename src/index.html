@@ -12,14 +12,14 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    
+
     <meta name="theme-color" content="#ffffff">
     <title>Homepage</title>
 </head>
 
 
 
-<body class="bg-fade-50 bg:fade-20@dark bg:fade-80@light" style="font-family: 'Inter', sans-serif; margin: 0;">
+<body class="bg:fade-20@dark bg:fade-80@light" style="font-family: 'Inter', sans-serif; margin: 0;">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -33,11 +33,18 @@
         </div>
 
         <nav class="hidden block@sm">
-            <ul class="flex center-content list-style-type:none font-weight:400 font:black">
-                <li class=""><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="index.html">Home</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="about.html">About</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="contacts.html">Contacts</a></li>
-                <li class="ml:3vh"><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover" href="login.html">Log In</a> <a class="ml:2vh px:2vh py:10px text-decoration:none font:white:hover bg:violet:hover font:black bg:#ffde34 border-radius:5" href="sign-up.html">Sign Up</a></li>
+            <ul class="flex center-content list-style-type:none font-weight:400 gap:2rem f:black">
+                <li class=""><a
+                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="index.html">Home</a></li>
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="about.html">About</a></li>
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="contacts.html">Contacts</a></li>
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                        href="login.html">Log In</a> <a
+                        class="ml:1rem p:10px|20px text-decoration:none f:white:hover bg:violet:hover f:black bg:#ffde34 border-radius:5"
+                        href="sign-up.html">Sign Up</a></li>
             </ul>
         </nav>
 
@@ -59,20 +66,24 @@
 
     <!-- /Heading  -->
 
-    <h2 class="font-weight:medium font-size:20px font-size:30px@sm font-weight:700@sm my:40px px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg mx:auto">Recent blog posts</h2>
+    <h2
+        class="f:medium f:20px f:30px@sm font-weight:700@sm my:40px px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg mx:auto">
+        Recent blog posts</h2>
 
     <!-- Recent Articles -->
 
-    <section class="px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg grid-cols:2@sm grid-template-rows:min@lg gap:25@sm gap:40@lg mx:auto">
+    <section
+        class="px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg grid-cols:2@sm grid-template-rows:min@lg gap:25@sm gap:40@lg mx:auto">
 
         <!-- 1 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
-            <img width="" class="object:fill w:100% mb:24px" src="assets/images/guitar-image.jpg"
-                alt="Guitar image" />
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
+            <img width="" class="object:fill w:100% mb:24px" src="assets/images/guitar-image.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font:14px font-weight:600">Friday, 13 May 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:600">Friday, 13 May 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:700 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Сhoosing a guitar for your favorite genre</a>
+                    <a href="article.html"
+                        class="font-weight:700 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Сhoosing
+                        a guitar for your favorite genre</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -80,17 +91,17 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">This article explores some of the best guitar
+                <p class="f:16px color:#667085 mb:24px font-weight:400">This article explores some of the best guitar
                     options for rock, blues, jazz and country music.</p>
 
 
                 <div class="flex mt:auto@sm">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -99,13 +110,15 @@
         <!-- /1 -->
 
         <!-- 2 -->
-        <div class="flex flex-direction:column grid-col-span:1 grid-row-span:1 mx:auto min-h:100%@sm flex-shrink:0@lg">
+        <div class="flex flex:col grid-col-span:1 grid-row-span:1 mx:auto min-h:100%@sm flex-shrink:0@lg">
             <img class="object:fill w:100% h:100%@lg mb:24px" src="assets/images/mac-and-cheese.jpg"
                 alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Thursday, 15 May 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Thursday, 15 May 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Perfect Mac &amp; Cheese</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Perfect
+                        Mac &amp; Cheese</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -113,38 +126,41 @@
                     </svg>
 
                 </div>
-               <div class="flex flex-direction:column jc:space-between">
-                    <p class="font:16px color:#667085 mb:24px font-weight:400">Mac &amp; cheese is a great way to combine
-                        flavor and comfort. Here's a delicious and easy recipe to make perfect mac and cheese every time.
+                <div class="flex flex:col jc:space-between">
+                    <p class="f:16px color:#667085 mb:24px font-weight:400">Mac &amp; cheese is a great way to combine
+                        flavor and comfort. Here's a delicious and easy recipe to make perfect mac and cheese every
+                        time.
                     </p>
-    
-    
+
+
                     <div class="flex mt:5px">
                         <div class="flex center-content rounded bg:#F9F5FF">
-                            <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Food</p>
+                            <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Food</p>
                         </div>
-    
-                        <div class="flex center-content rounded ml:2vh bg:#F9F5FF">
-                            <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Cooking</p>
+
+                        <div class="flex center-content rounded ml:2rem bg:#F9F5FF">
+                            <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Cooking</p>
                         </div>
-    
-                        <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                            <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+
+                        <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                            <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
 
         <!-- /2 -->
 
         <!-- 3 -->
-        <div class="flex flex-direction:column mx:auto min-h:100%@sm">
+        <div class="flex flex:col mx:auto min-h:100%@sm">
             <img width="" class="w:100% mb:24px" src="assets/images/lofi-image.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Sunday, 03 March 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Sunday, 03 March 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 mb:12px font-size:24px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Story of a Lo-Fi Girl</a>
+                    <a href="article.html"
+                        class="font-weight:600 mb:12px f:24px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Story
+                        of a Lo-Fi Girl</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -152,18 +168,18 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">She sits alone in her room, headphones on, a
+                <p class="f:16px color:#667085 mb:24px font-weight:400">She sits alone in her room, headphones on, a
                     warm cup of tea by her side. Where did she come from? Who is she listening to on her headphones?
                     What is she thinking about as she stares off into the distance? </p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Animation</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Animation</p>
                     </div>
                 </div>
             </div>
@@ -172,13 +188,14 @@
         <!-- /3 -->
 
         <!-- 4 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
-            <img width="" class="object:fill w:100% mb:24px" src="assets/images/naruto-image.jpg"
-                alt="Guitar image" />
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
+            <img width="" class="object:fill w:100% mb:24px" src="assets/images/naruto-image.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Monday, 19 April 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Monday, 19 April 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Top 10&colon; Most powerful Naruto Characters</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Top
+                        10&colon; Most powerful Naruto Characters</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -186,18 +203,18 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">In the world of Naruto, ninjas possess a
+                <p class="f:16px color:#667085 mb:24px font-weight:400">In the world of Naruto, ninjas possess a
                     variety of powerful abilities and skills. These shinobi have powers beyond imagination and shape the
                     fate of the world.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -206,19 +223,24 @@
     </section>
     <!-- /Recent Articles -->
 
-    <h2 class="font-weight:medium font-size:20px font-size:30px@sm font-weight:700@sm my:40px mt:60px@sm mb:30px@sm px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg mx:auto">All blog posts</h2>
+    <h2
+        class="f:medium f:20px f:30px@sm font-weight:700@sm my:40px mt:60px@sm mb:30px@sm px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg mx:auto">
+        All blog posts</h2>
 
     <!-- ALL Articles -->
 
-    <section class="px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg grid-cols:2@sm grid-cols:3@lg gap:25@sm gap:50@lg mx:auto">
+    <section
+        class="px:20px max-w:375px@3xs max-w:768px@sm max-w:1200px@lg grid-cols:2@sm grid-cols:3@lg gap:25@sm gap:50@lg mx:auto">
 
         <!-- 1 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/fifa-image.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Friday, 13 May 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Friday, 13 May 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">FIFA 23 causes addiction and aggression</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">FIFA
+                        23 causes addiction and aggression</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -226,17 +248,17 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">Some players have reported damaged
+                <p class="f:16px color:#667085 mb:24px font-weight:400">Some players have reported damaged
                     relationships, poor sleep, and physical health issues due to excessive FIFA play.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -245,12 +267,14 @@
         <!-- /1 -->
 
         <!-- 2 -->
-        <div class="flex flex-direction:column mx:auto">
+        <div class="flex flex:col mx:auto">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/benedict.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Thursday, 25 June 2019</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Thursday, 25 June 2019</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">How to spell his name correctly&quest;</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">How
+                        to spell his name correctly&quest;</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -258,7 +282,7 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">Crumblespork Fannypatch&quest; Breadworm
+                <p class="f:16px color:#667085 mb:24px font-weight:400">Crumblespork Fannypatch&quest; Breadworm
                     Cinklestoop&quest; Bouillabase Chardonnay&quest; Bourgeoise Catastrophe&quest; Burgerking
                     Cucuflerpark&quest;
                 </p>
@@ -266,15 +290,15 @@
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Food</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Food</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Cooking</p>
+                    <div class="flex center-content rounded ml:2rem bg:#F9F5FF">
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Cooking</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -283,13 +307,15 @@
         <!-- /2 -->
 
         <!-- 3 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/matthew-bellamy.jpg"
                 alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Tuesday, 21 February 2020</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Tuesday, 21 February 2020</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Reasons why Matthew Bellamy is a living legend</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Reasons
+                        why Matthew Bellamy is a living legend</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -297,17 +323,17 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">With its fusion of alternative rock,
+                <p class="f:16px color:#667085 mb:24px font-weight:400">With its fusion of alternative rock,
                     electronica and progressive rock, Muse's music stands out as innovative and genre-defying.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">People</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">People</p>
                     </div>
                 </div>
             </div>
@@ -316,12 +342,14 @@
         <!-- /3 -->
 
         <!-- 4 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/macbook.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Saturday, 31 January 2022</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Saturday, 31 January 2022</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Apple is testing a brand-new M3 chip</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Apple
+                        is testing a brand-new M3 chip</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -329,18 +357,18 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">The new M3 is rumored to power future
+                <p class="f:16px color:#667085 mb:24px font-weight:400">The new M3 is rumored to power future
                     versions of the MacBook Pro, iMac and iPad Pro, demonstrating Apple's commitment to designing
                     high-performance, custom silicon for its devices.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -348,13 +376,15 @@
         <!-- /4 -->
 
         <!-- 5 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/back-to-the-future.jpg"
                 alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Monday, 19 December 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Monday, 19 December 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">Our reality vs. What was shown in the movies</a>
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">Our
+                        reality vs. What was shown in the movies</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -362,18 +392,18 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">In the 1980s, the future was seen, with space
+                <p class="f:16px color:#667085 mb:24px font-weight:400">In the 1980s, the future was seen, with space
                     shuttles launching routinely. Futuristic technologies like flying cars, robot servants, and
                     hoverboards seemed just around the corner.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -381,12 +411,14 @@
         <!-- /5 -->
 
         <!-- 6 -->
-        <div class="flex flex-direction:column mx:auto my:6vh my:0@sm">
+        <div class="flex flex:col mx:auto my:6rem my:0@sm">
             <img width="" class="object:fill w:100% mb:24px" src="assets/images/moon.jpg" alt="Guitar image" />
             <div>
-                <p class="mb:12px color:#F45050 font-size:14px font-weight:500">Monday, 11 August 2023</p>
+                <p class="mb:12px color:#F45050 f:14px font-weight:500">Monday, 11 August 2023</p>
                 <div class="flex jc:space-between ai:center">
-                    <a href="article.html" class="font-weight:600 font-size:24px mb:12px m:0 text-decoration:none font:black text-decoration:underline:hover text-decoration-color:violet:hover">How to take picture of moon if you are not a Samsung
+                    <a href="article.html"
+                        class="font-weight:600 f:24px mb:12px m:0 text-decoration:none f:black text-decoration:underline:hover text-decoration-color:violet:hover">How
+                        to take picture of moon if you are not a Samsung
                         owner</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="flex-shrink:0 w:1.5rem h:1.5rem mb:auto cursor:pointer">
@@ -395,18 +427,18 @@
                     </svg>
 
                 </div>
-                <p class="font:16px color:#667085 mb:24px font-weight:400">While Samsung's Galaxy phones are renowned
+                <p class="f:16px color:#667085 mb:24px font-weight:400">While Samsung's Galaxy phones are renowned
                     for their moon photography modes, you don't need a special phone to capture the moon. Here are some
                     tips for taking lunar photos on any camera.</p>
 
 
                 <div class="flex">
                     <div class="flex center-content rounded bg:#F9F5FF">
-                        <p class="font-color:#6941C6 font-size:14px m:0 px:2vh py:2px">Music</p>
+                        <p class="font-color:#6941C6 f:14px m:0 px:2rem py:2px">Music</p>
                     </div>
 
-                    <div class="flex center-content rounded ml:2vh bg:#ECFDF3">
-                        <p class="font-color:#027A48 font-size:14px m:0 px:2vh py:2px">Hobby</p>
+                    <div class="flex center-content rounded ml:2rem bg:#ECFDF3">
+                        <p class="font-color:#027A48 f:14px m:0 px:2rem py:2px">Hobby</p>
                     </div>
                 </div>
             </div>
@@ -418,26 +450,36 @@
 
 
     <!-- Footer  -->
-    <footer class="flex center-content my:6vh px:20px gap:2vh max-w:375px@3xs max-w:450px@sm px:0@sm mx:auto">
+    <footer class="flex center-content my:6rem px:20px gap:1rem max-w:375px@3xs max-w:450px@sm px:0@sm mx:auto">
         <div class="cursor:pointer">&larr;</div>
-        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E bg:#FFEF9E:hover cursor:pointer">1</div>
-        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">2</div>
-        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">3</div>
-        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">4</div>
-        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">5</div>
+        <div class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E bg:#FFEF9E:hover cursor:pointer">1
+        </div>
+        <div
+            class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">
+            2</div>
+        <div
+            class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">
+            3</div>
+        <div
+            class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">
+            4</div>
+        <div
+            class="flex center-content flex-shrink:0 r:5 w:40px h:40px bg:#FFEF9E:active bg:gray-90:hover cursor:pointer">
+            5</div>
         <div class="cursor:pointer">&rarr;</div>
     </footer>
 
-    <section class="flex center-content gap:4vh my:4vh max-w:375px@3xs mx:auto">
+    <section class="flex center-content gap:2rem my:4rem max-w:375px@3xs mx:auto">
         <a href="https://github.com/bbulakh"><img src="assets/images/github.svg" alt="Github icon"></a>
-        <a href="https://www.linkedin.com/in/bogdan-bulakh-393284190/"><img src="assets/images/linkedin.svg" alt="Linkedin icon"></a>
+        <a href="https://www.linkedin.com/in/bogdan-bulakh-393284190/"><img src="assets/images/linkedin.svg"
+                alt="Linkedin icon"></a>
         <a href="https://twitter.com/mr_bulakh"><img src="assets/images/twitter.svg" alt="Twitter logo"></a>
         <a href="https://t.me/b_bulakh"><img src="assets/images/telegram.svg" alt=""></a>
     </section>
 
 
 
-    <section class="flex flex-direction:column center-content bg:#ffde34 w:100% py:20px hidden@lg">
+    <section class="flex flex:col center-content bg:#ffde34 w:100% py:20px hidden@lg">
         <img width="60px" height="60px" src="assets/images/bloghub-mini-logo.svg" alt="Bloghub logo">
         <p>&copy; Bogdan Bulakh, 2023</p>
     </section>

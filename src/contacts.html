@@ -17,7 +17,7 @@
     <title>Contact Me</title>
 </head>
 
-<body class="flex flex-direction:column jc:space-between h:100vh" style="font-family: 'Inter', sans-serif; margin: 0;">
+<body class="flex flex:col jc:space-between h:100vh" style="font-family: 'Inter', sans-serif; margin: 0;">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -32,20 +32,17 @@
         </div>
 
         <nav class="hidden block@sm">
-            <ul class="flex center-content list-style-type:none font-weight:400 font:black">
+            <ul class="flex center-content list-style-type:none font-weight:400 gap:2rem f:black">
                 <li class=""><a
                         class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
                         href="index.html">Home</a></li>
-                <li class="ml:3vh"><a
-                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
                         href="about.html">About</a></li>
-                <li class="ml:3vh"><a
-                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
                         href="contacts.html">Contacts</a></li>
-                <li class="ml:3vh"><a
-                        class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
+                <li><a class="text-decoration:none text-decoration:underline:hover color:black color:#F45050:hover"
                         href="login.html">Log In</a> <a
-                        class="ml:2vh px:2vh py:10px text-decoration:none font:white:hover bg:violet:hover font:black bg:#ffde34 border-radius:5"
+                        class="ml:1rem p:10px|20px text-decoration:none f:white:hover bg:violet:hover f:black bg:#ffde34 border-radius:5"
                         href="sign-up.html">Sign Up</a></li>
             </ul>
         </nav>
@@ -61,31 +58,31 @@
     </section>
     <!-- /Navbar  -->
 
-    <div class="my:10vh max-w:500px@3xs mx:auto w:100%">
-        <div class="px:20 mb:5vh">
-            <h2 class="mb:0 font:30px">Let's get in touch.</h2>
-            <p class="m:0 font:20px">Ask me a question&excl;</p>
+    <div class="my:10rem max-w:500px@3xs mx:auto w:100%">
+        <div class="px:20 mb:5rem">
+            <h2 class="mb:0 f:30px">Let's get in touch.</h2>
+            <p class="m:0 f:20px">Ask me a question&excl;</p>
         </div>
 
         <form class="px:20px">
-            <div class="flex flex-direction:column my:2vh">
-                <label class="mb:2vh font:medium" for="">E-mail</label>
+            <div class="flex flex:col my:2rem">
+                <label class="mb:2rem f:medium" for="">E-mail</label>
                 <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="email"
                     placeholder="user@bloghub.com">
             </div>
-            <div class="flex flex-direction:column my:2vh">
-                <label class="mb:2vh font:medium" for="">Name</label>
+            <div class="flex flex:col my:2rem">
+                <label class="mb:2rem f:medium" for="">Name</label>
                 <input class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" type="text"
                     placeholder="Bogdan Bulakh">
             </div>
 
-            <div class="flex flex-direction:column my:2vh">
-                <label class="mb:2vh font:medium" for="">Message</label>
+            <div class="flex flex:col my:2rem">
+                <label class="mb:2rem f:medium" for="">Message</label>
                 <textarea class="py:10px px:10px r:5px b:1px|solid|black outline-color:violet" cols="30"
                     rows="10"></textarea>
             </div>
 
-            <button class="w:100% py:10px font:16px bg:violet font:white b:none r:5px">Send Message</button>
+            <button class="w:100% py:10px f:16px bg:violet f:white b:none r:5px">Send Message</button>
 
 
         </form>
@@ -95,7 +92,7 @@
 
 
     <!-- Footer  -->
-    <section class="flex flex-direction:column center-content bg:#ffde34 w:100% py:20px hidden@lg">
+    <section class="flex flex:col center-content bg:#ffde34 w:100% py:20px hidden@lg">
         <img width="60px" height="60px" src="assets/images/bloghub-mini-logo.svg" alt="Bloghub logo">
         <p>&copy; Bogdan Bulakh, 2023</p>
     </section>

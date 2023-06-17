@@ -18,13 +18,13 @@
     <title>Log in</title>
 </head>
 
-<body class="flex flex:col jc:space-between h:100vh" style="font-family: 'Inter', sans-serif; margin: 0;">
+<body x-data="{mobileMenuOpen: false}" class="flex flex:col jc:space-between h:100vh" style="font-family: 'Inter', sans-serif; margin: 0;">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
 
     <!-- Navbar  -->
-    <section class="flex jc:space-between ai:center w:100% p:20px max-w:768px@sm max-w:1200px@lg mx:auto">
+    <section class="rel flex jc:space-between ai:center w:100% p:20px max-w:768px@sm max-w:1200px@lg mx:auto">
 
         <div class="rounded b:1|solid|black border-color:black cursor:pointer">
             <div class="bg:#F9D949 b:1|solid|black border-color:white rounded w:35px h:35px flex center-content">
@@ -50,14 +50,37 @@
 
 
 
-        <div class="w:35px h:35px cursor:pointer hidden@sm">
+        <button @click="mobileMenuOpen = ! mobileMenuOpen" class="w:35px h:35px bg:white b:none cursor:pointer hidden@sm">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                 stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
-        </div>
+        </button>
     </section>
     <!-- /Navbar  -->
+
+     <!-- Burger Menu  -->
+     <section x-show="mobileMenuOpen" @click.outside="mobileMenuOpen = false" class="abs h:100vh mx:auto z:50 left:0 right:0 px:20px bg:white">
+        <div class="mx:auto">
+            <h2 class="t:center">Bogdan Bulakh</h2>
+            <div class="mx:auto">
+                <ul class="flex flex:col t:center list-style-type:none font-weight:400 px:20px gap:1rem f:black">
+                    <li><a class="text-decoration:none text-decoration:underline:hover color:black" href="index.html">Home</a></li>
+                    <li><a class="text-decoration:none text-decoration:underline:hover color:black" href="about.html">About</a></li>
+                    <li><a class="text-decoration:none text-decoration:underline:hover color:black" href="login.html">Log In</a></li>
+                    <li><a class="text-decoration:none text-decoration:underline:hover color:black" href="sign-up.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <section class="flex center-content gap:2rem my:2rem max-w:375px@3xs mx:auto">
+                <a href="https://github.com/bbulakh"><img src="assets/images/github.svg" alt="Github icon"></a>
+                <a href="https://www.linkedin.com/in/bogdan-bulakh-393284190/"><img src="assets/images/linkedin.svg"
+                        alt="Linkedin icon"></a>
+                <a href="https://twitter.com/mr_bulakh"><img src="assets/images/twitter.svg" alt="Twitter logo"></a>
+                <a href="https://t.me/b_bulakh"><img src="assets/images/telegram.svg" alt=""></a>
+            </section>
+        </div>
+    </section>
+    <!-- /Burger Menu  -->
 
     <div class="my:5rem max-w:500px@3xs mx:auto w:100%">
         <div class="px:20 mb:1rem">

@@ -21,3 +21,30 @@ MIT licensed - free for personal and commercial use.
 <img width="350px" src="src/assets/images/contacts-screenshot.jpg" alt="Account page screenshot">
 </details>
 
+## Getting started
+
+1. Clone the project
+```
+git clone https://github.com/bbulakh/tailwind-ecommerce.git
+```
+
+2. Install the dependencies:
+```
+npm install
+```
+
+3. Run the project
+```
+# Start server
+npm run start
+
+# or Build 
+npm run build
+```
+
+## Live demo
+Check the live demo here: [https://mastercss-blog-demo.vercel.app/](https://mastercss-blog-demo.vercel.app/)
+
+## License
+[The MIT License (MIT)](https://github.com/bbulakh/master-css-blog/blob/main/LICENSE)
+

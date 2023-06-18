@@ -25,7 +25,7 @@ MIT licensed - free for personal and commercial use.
 
 1. Clone the project
 ```
-git clone https://github.com/bbulakh/tailwind-ecommerce.git
+git clone https://github.com/bbulakh/master-css-blog.git
 ```
 
 2. Install the dependencies:
